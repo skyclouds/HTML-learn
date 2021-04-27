@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>注册页面</h2>
+    <!-- name是表单元素名字,要求单选按钮与复选框必须相同的name -->
+    <!-- name、value主要是给后段人员使用 -->
+    <!-- label标签用于增加用户体验,通过id跟表单元素绑定 -->
+    <form action="xxx.html" method="get">
+        <table width="500">
+            <tr>
+                <td><label for="name">昵称:</label></td>
+                <td><input type="text" id="name" name="name" /></td>
+            </tr>
+            <tr>
+                <td><label for="icon">头像:</label></td>
+                <td><input type="file" id="icon" /></td>
+            </tr>
+            <tr>
+                <td><label for="sex">性别:</label></td>
+                <td>
+                    <input type="radio" name="sex" id="male" checked="true" />
+                    <label for="male">男</label>
+                    <input type="radio" name="sex" id="female" />
+                    <label for="female">女</label>
+                </td>
+
+            </tr>
+            <tr>
+                <td><label for="pwd">密码:</label></td>
+                <td> <input type="password" id="pwd" /></td>
+            </tr>
+            <tr>
+                <td><label for="hobbies">兴趣:</label> </td>
+                <td>
+                    <input type="checkbox" id="travel" value="旅游" />
+                    <label for="travel">旅游</label>
+                    <input type="checkbox" id="movie" value="电影" />
+                    <label for="movie">电影</label>
+                    <input type="checkbox" id="sport" value="运动" />
+                    <label for="sport">运动</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="education">学历:</label></td>
+                <td><select id="education" name="education">
+                        <option>小学</option>
+                        <option>初中</option>
+                        <option>大专</option>
+                        <option selected="selected">本科</option>
+                        <option>研究生</option>
+                        <option>博士</option>
+                    </select>
+                </td>
+            </tr>
+            <td><label for="code">验证码:</label></td>
+            <td>
+                <input type="text" id="code" />
+                <input type="button" value="获取短信验证码" />
+            </td>
+            </tr>
+            <tr>
+                <!-- 用户多行输入 -->
+                <td><label for="info">个人简介:</label></td>
+                <td><textarea clos="50" rows="5" id="info"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <!-- 将表单域里面的值提交给后台服务器,get协议位name=value -->
+                <td> <input type="submit" value="免费注册" /></td>
+                <!-- 将表单域里面元素还原成初始状态 -->
+                <!-- <td> <input type="reset" value="重新填写" /></td> -->
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="#">我是会员,立即登录</a></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
